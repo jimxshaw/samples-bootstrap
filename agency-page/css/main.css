@@ -8350,3 +8350,6 @@ button.close {
 .fa-medium:before {
   content: "\f23a";
 }
+#clients img {
+  width: 180px;
+}
