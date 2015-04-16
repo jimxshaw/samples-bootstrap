@@ -6,7 +6,7 @@
 @light: #f4f4f4;
 
 #clients img {
-	width: 180px;
+	width: 150px;
 }
 
 html {
@@ -23,6 +23,7 @@ body {
 }
 
 // Typography
+
 h1,
 h2,
 h3,
@@ -50,6 +51,8 @@ a:focus {
   text-decoration: none;
   color: darken(@primary, 20%);
 }
+
+// Navigation
 
 .navbar {
   margin-bottom: 0;
@@ -93,6 +96,92 @@ a:focus {
     padding: 20px 0;
     border-bottom: none;
     background: transparent;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: @dark;
+  }
+
+  .navbar-custom.top-nav-collapse {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Landing page
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color: @light;
+  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background-color: @dark;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+
+.intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.brand-heading {
+  font-size: 40px;
+}
+
+.intro-text {
+  font-size: 18px;
+}
+
+@media(min-width: 767px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+
+  .brand-heading {
+    font-size: 100px !important;
+  }
+
+  .intro-text {
+    font-size: 25px;
+  }
+}
+
+// Content section
+
+.content-section {
+  padding: 100px 0;
+}
+
+// Icon blocks
+
+.block-icon-left {
+  overflow: auto;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .icon-content {
+    float: left;
+    width: 70%;
+  }
+
+  .icon {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
   }
 }
 
