@@ -8472,7 +8472,7 @@ a:focus {
   }
 }
 .content-section {
-  padding: 100px 0;
+  padding: 80px 0 40px 0;
 }
 .block-icon-left {
   overflow: auto;
@@ -8495,4 +8495,38 @@ a:focus {
   float: left;
   width: 30%;
   margin-top: 10px;
+}
+.who-section {
+  width: 100%;
+  padding: 50px 0;
+  color: #f4f4f4;
+  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background-color: #333333;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+}
+@media (min-width: 767px) {
+  .who-section {
+    padding: 100px 0;
+  }
+}
+#clients {
+  text-align: center;
+  margin-bottom: 80px;
+}
+#clients img {
+  margin-right: 30px;
+}
+#contact {
+  background: #333333;
+  color: #f4f4f4;
+  padding-bottom: 80px;
+}
+footer {
+  margin-top: 10px;
+  padding-top: 30px;
+  height: 80px;
+  text-align: center;
 }
