@@ -38,35 +38,79 @@
 
     <section>
       <div class="container">
-        <div row="row">
-          <div class="col-md-4">
-            <a href="#"><img src="img/sample1.jpg" class="img-thumbnail"></a>
-            <div class="title">Sample Image 1</div>
-          </div>
-          <div class="col-md-4">
-            <a href="#"><img src="img/sample2.jpg" class="img-thumbnail"></a>
-            <div class="title">Sample Image 2</div>
-          </div>
-          <div class="col-md-4">
-            <a href="#"><img src="img/sample3.jpg" class="img-thumbnail"></a>
-            <div class="title">Sample Image 3</div>
-          </div>
-        </div><!-- row -->
+        <div role="tabpanel">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All Photos</a></li>
+          <li role="presentation"><a href="#one" aria-controls="one" role="tab" data-toggle="tab">Category 1</a></li>
+          <li role="presentation"><a href="#two" aria-controls="two" role="tab" data-toggle="tab">Category 2</a></li>
+        </ul>
+        <br>
 
-        <div row="row">
-          <div class="col-md-4">
-            <a href="#"><img src="img/sample4.jpg" class="img-thumbnail"></a>
-            <div class="title">Sample Image 4</div>
-          </div>
-          <div class="col-md-4">
-            <a href="#"><img src="img/sample5.jpg" class="img-thumbnail"></a>
-            <div class="title">Sample Image 5</div>
-          </div>
-          <div class="col-md-4">
-            <a href="#"><img src="img/sample6.jpg" class="img-thumbnail"></a>
-            <div class="title">Sample Image 6</div>
-          </div>
-        </div><!-- row -->
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="all">
+            <div row="row">
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample1.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 1</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample2.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 2</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample3.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 3</div>
+              </div>
+            </div><!-- row -->
+
+            <div row="row">
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample4.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 4</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample5.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 5</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample6.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 6</div>
+              </div>
+            </div><!-- row -->
+            </div><!-- all -->
+            <div role="tabpanel" class="tab-pane" id="one">
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample2.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 2</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample4.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 4</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample6.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 6</div>
+              </div>
+              </div>
+            <div role="tabpanel" class="tab-pane" id="two">
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample1.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 1</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample3.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 3</div>
+              </div>
+              <div class="col-md-4">
+                <a href="#"><img src="img/sample5.jpg" class="img-thumbnail"></a>
+                <div class="title">Sample Image 5</div>
+              </div>
+            </div>
+        </div>
+
+        </div>
       </div><!-- container -->
     </section>
 
