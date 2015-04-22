@@ -1,7 +1,10 @@
+a {
+  color: #702c74 !important;
+}
 .navbar {
   margin-bottom: 20px;
   margin-top: 30px;
-  background: #0383c0 url(../img/navbar.png) repeat-x;
+  background: #702c74 url(../img/navbar.png) repeat-x;
   border: 1px solid #ccc;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -9,7 +12,7 @@
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default a:hover {
   background: none !important;
-  color: #0383c0 !important;
+  color: #702c74 !important;
   font-weight: bold;
 }
 .logo {
@@ -18,7 +21,7 @@
   font-family: 'Oswald', sans-serif;
 }
 .primary {
-  color: #0383c0;
+  color: #702c74;
 }
 .subtext {
   color: #666;
@@ -29,7 +32,7 @@
 header form {
   float: right;
   margin-top: 30px;
-  background: #0383c0;
+  background: #702c74;
   padding: 15px;
   color: #fff;
   border-radius: 5px;
@@ -54,7 +57,7 @@ header form {
 .tablist li {
   background: #ccc;
   list-style: none;
-  color: #666;
+  color: #666 !important;
   padding: 15px 10px;
   padding-left: 20px;
   margin-bottom: 5px;
@@ -62,11 +65,11 @@ header form {
   font-size: 15px;
 }
 .tablist li.active {
-  background: #0383c0;
+  background: #702c74;
   color: #fff;
 }
 .tablist li.active a {
-  color: #fff;
+  color: #fff !important;
 }
 .tablist a {
   color: #666;
@@ -76,7 +79,7 @@ header form {
 .tab-content {
   float: right;
   width: 70%;
-  background: #0383c0;
+  background: #702c74;
   color: #fff;
   overflow: hidden;
   height: 275px;
@@ -91,6 +94,19 @@ header form {
   width: 40%;
   margin-left: 40px;
 }
+.main-img {
+  width: 100%;
+}
+#buy-now {
+  color: #fff !important;
+}
+footer {
+  text-align: center;
+  height: 60px;
+  background: #f4f4f4;
+  padding-top: 20px;
+  margin-top: 50px;
+}
 @media (max-width: 768px) {
   .slide-img {
     display: none;
@@ -100,7 +116,7 @@ header form {
     width: 80%;
   }
   .navbar {
-    background: #0383c0 !important;
+    background: #702c74 !important;
   }
   .navbar a {
     color: #fff !important;
