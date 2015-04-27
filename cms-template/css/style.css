@@ -54,8 +54,8 @@ body#login h2 {
 
 footer {
   margin-top: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
+  height: 60px;
   text-align: center;
   background-color: #1f87c2;
   color: #fff;
