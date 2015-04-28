@@ -33,7 +33,7 @@
           <li><a href="users.html">Users</a></li>
         </ul>
         <form class="navbar-form navbar-left">
-          <input type="text" class="form-control col-lg-8" placeholder="Search">
+          <input type="text" class="form-control col-lg-8 search-form" placeholder="Search">
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
@@ -143,6 +143,23 @@
         $('#sort-table').tablesorter({
           sortList: [[0, 0], [1, 0]]
         });
+      });
+    </script>
+    <script>
+      $(function() {
+        $('#sort-table').tablesorter({
+          sortList: [[0, 0], [1, 0]]
+        });
+      });
+    </script>
+    <script>
+      var $rows = $('table tr');
+      $('.search-form').keyup(function() {
+        var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+        $rows.show().filter(function() {
+          var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+          return !~text.indexOf(val);
+        }).hide();
       });
     </script>
   </body>
