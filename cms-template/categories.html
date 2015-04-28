@@ -77,24 +77,28 @@
               <li><a href="index.html">Dashboard</a></li>
               <li class="active">Categories</li>
             </ol>
-            <h3>Latest Pages</h3>
-            <table class="table table-striped">
-              <tr>
-                <th><input type="checkbox"></th>
-                <th>Category Title</th>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="category.html">Sample Category 1</a></td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="category.html">Sample Category 2</a></td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="category.html">Sample Category 3</a></td>
-              </tr>
+
+            <table id="sort-table" class="table table-striped tablesorter">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>Category Title <i class="glyphicon glyphicon-chevron-down"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="category.html">Sample Category 1</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="category.html">Sample Category 2</a></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td><a href="category.html">Sample Category 3</a></td>
+                </tr>
+              </tbody>
             </table>
 
             <nav>
@@ -131,7 +135,15 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(function() {
+        $('#sort-table').tablesorter({
+          sortList: [[0, 0], [1, 0]]
+        });
+      });
+    </script>
   </body>
 </html>

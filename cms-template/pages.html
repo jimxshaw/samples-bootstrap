@@ -77,44 +77,48 @@
               <li><a href="index.html">Dashboard</a></li>
               <li class="active">Pages</li>
             </ol>
-            <h3>Latest Pages</h3>
-            <table class="table table-striped">
-              <tr>
-                <th><input type="checkbox"></th>
-                <th>Page Title</th>
-                <th>Category</th>
-                <th>Author</th>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></th>
-                <td><a href="page.html">Sample Page 1</a></td>
-                <td>Category 1</td>
-                <td>Thomas</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></th>
-                <td><a href="page.html">Sample Page 2</a></td>
-                <td>Category 2</td>
-                <td>James</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></th>
-                <td><a href="page.html">Sample Page 3</a></td>
-                <td>Category 3</td>
-                <td>George</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></th>
-                <td><a href="page.html">Sample Page 4</a></td>
-                <td>Category 2</td>
-                <td>John</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox"></th>
-                <td><a href="page.html">Sample Page 5</a></td>
-                <td>Category 1</td>
-                <td>Benjamin</td>
-              </tr>
+
+            <table id="sort-table" class="table table-striped tablesorter">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>Page Title <i class="glyphicon glyphicon-chevron-down"></i></th>
+                  <th>Category <i class="glyphicon glyphicon-chevron-down"></i></th>
+                  <th>Author <i class="glyphicon glyphicon-chevron-down"></i></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox"></th>
+                  <td><a href="page.html">Sample Page 1</a></td>
+                  <td>Category 1</td>
+                  <td>Thomas</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></th>
+                  <td><a href="page.html">Sample Page 2</a></td>
+                  <td>Category 2</td>
+                  <td>James</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></th>
+                  <td><a href="page.html">Sample Page 3</a></td>
+                  <td>Category 3</td>
+                  <td>George</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></th>
+                  <td><a href="page.html">Sample Page 4</a></td>
+                  <td>Category 2</td>
+                  <td>John</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></th>
+                  <td><a href="page.html">Sample Page 5</a></td>
+                  <td>Category 1</td>
+                  <td>Benjamin</td>
+                </tr>
+              </tbody>  
             </table>
 
             <nav>
@@ -151,7 +155,15 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.tablesorter.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      $(function() {
+        $('#sort-table').tablesorter({
+          sortList: [[0, 0], [1, 0]]
+        });
+      });
+    </script>
   </body>
 </html>
