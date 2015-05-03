@@ -2,6 +2,14 @@ body {
   padding-top: 90px;
 }
 
+section {
+  padding: 30px 0;
+}
+
+.section-gray {
+  background: #f4f4f4;
+}
+
 .nav {
   margin-top: 18px;
 }
@@ -46,7 +54,8 @@ body {
   text-transform: none;
 }
 
-.navbar-nav a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-nav a:hover, 
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background: #0383c0 !important;
   color: #fff !important;
 }
@@ -57,7 +66,9 @@ body {
   background: url(../img/bg.jpg) no-repeat;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
 }
@@ -66,7 +77,9 @@ h1 {
   font-size: 55px;
 }
 
-
+.fa-color {
+  color: #0383c0;
+}
 
 
 
