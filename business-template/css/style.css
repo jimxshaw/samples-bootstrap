@@ -51,6 +51,21 @@ body {
   color: #fff !important;
 }
 
+.jumbotron {
+  margin: 0 !important;
+  min-height: 450px;
+  background: url(../img/bg.jpg) no-repeat;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+.jumbotron h1 {
+  font-size: 55px;
+}
+
 
 
 
