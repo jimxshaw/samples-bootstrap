@@ -11,6 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -75,10 +76,56 @@
                     <textarea class="form-control" placeholder="Write something!"></textarea>
                   </div>
                   <button type="submit" class="btn btn-default">Submit</button>
+                  <div class="pull-right">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Text</button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-camera"></i> Image</button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-video-camera"></i> Video</button>
+                    </div>
+                  </div>
                 </form>
-              </div>
-            </div>
-          </div>
+              </div><!-- panel-body -->
+            </div><!-- panel-default -->
+
+            <div class="panel panel-default post">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <a class="post-avatar thumbnail" href="profile.html"><img src="img/user.png"><div class="text-center">User1</div></a>
+                    <div class="likes text-center"><i class="fa fa-thumbs-up"></i> 4 Likes</div>
+                  </div><!-- col-sm-2 -->
+                  <div class="col-sm-10">
+                    <div class="bubble">
+                      <div class="pointer">
+                        <p>Aenean interdum commodo metus, accumsan laoreet nunc vulputate at. In vestibulum auctor est, vel mattis dui varius et. In laoreet iaculis consectetur. Cras eu vestibulum turpis. Sed ac laoreet nisl, eu imperdiet nibh. Sed tempor tincidunt vestibulum. Morbi facilisis suscipit quam, sed vestibulum nunc vulputate et.</p>
+                      </div><!-- pointer -->
+                      <div class="pointer-border"></div>
+                    </div><!-- bubble -->
+                    <p class="point-actions"><a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Follow</a> - <a href="#">Share</a></p>
+                    <div class="comment-form">
+                      <form class="form-inline">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Enter comment...">
+                        </div>
+                        <button type="submit" class="btn btn-default">Add</button>
+                      </form>
+                    </div><!-- comment-form -->
+                    <div class="clearfix"></div>
+
+                    <div class="comments">
+                      <div class="comment">
+                        <a class="comment-avatar pull-left"><img src="img/user.png"></a>
+                        <div class="comment-text">
+                          <p>Praesent facilisis id tellus id rutrum. Donec vehicula urna lacus.</p>
+                        </div><!-- comment-text -->
+                      </div><!-- comment -->
+                      <div class="clearfix"></div>
+                    </div><!-- comments -->
+                  </div><!-- col-sm-10 -->
+                </div><!-- row -->
+              </div><!-- panel-body post -->
+            </div><!-- panel-default -->
+          </div><!-- col-md-8 -->
           <div class="col-md-4">
             
           </div>
