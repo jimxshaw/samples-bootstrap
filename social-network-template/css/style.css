@@ -18,6 +18,27 @@ header .logo {
   color: #fff !important;
 }
 
+.bubble {
+  position: relative;
+  width: 580px;
+}
+
+.comment-avatar img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.friends li {
+  list-style: none;
+  padding: 5px;
+  display: inline;
+  float: left;
+}
+
+.friends img {
+  width: 55px;
+}
+
 
 
 
