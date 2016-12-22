@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="styling-02.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+
+        <div class="form-group">
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" name="fullname" class="form-control" />
+        </div>
+
+
+        <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" rows="5" cols="40" class="form-control"></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <label for="luckynumber">Lucky Number</label>
+            <select name="luckynumber" id="luckynumber" class="form-control">
+                <option>double zero</option>
+                <option>seven</option>
+                <option>thirteen</option>
+            </select>
+        </div>
+
+        <br />
+
+        <div class="checkbox">
+            <label><input type="checkbox" value="dog" />Own a dog</label>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" value="cat" />Own a cat</label>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" value="owned" />Owned by a cat</label>
+        </div>
+
+        <br />
+
+        <span>Your favorite weather?</span><br />
+
+
+        <div class="radio">
+            <label><input type="radio" name="count" value="hot" />hot</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="count" value="cold" />cold</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="count" value="rainy" />rainy</label>
+        </div>
+
+        <br />
+
+        <input type="submit" value="Submit" class="btn btn-primary" />
+
+    </form>
+</body>
+</html>
