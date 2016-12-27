@@ -9,23 +9,24 @@
 
     <form class="form-horizontal">
 
-        <fieldset class="col-sm-6">
+        <fieldset class="col-sm-6" >
             <legend>Information</legend>
             <div class="form-group">
                 <label for="fullname" class="col-sm-2 control-label">Name</label>
                 <div class="col-sm-10">
-                    <input type="text" id="fullname" name="fullname" class="form-control" />
+                    <input type="text" id="fullname" name="fullname" class="form-control input-lg" />
+                    <span class="text-info">This is some info text</span>
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group has-error">
                 <label for="comments" class="col-sm-2 control-label">Comments</label>
                 <div class="col-sm-10">
                     <textarea name="comments" id="comments" class="form-control" rows="5" cols="40"></textarea>
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group has-success">
                 <label for="luckynumber" class="col-sm-2 control-label">Lucky Number</label>
                 <div class="col-sm-10">
                     <select name="luckynumber" id="luckynumber" class="col-sm-10 form-control">
