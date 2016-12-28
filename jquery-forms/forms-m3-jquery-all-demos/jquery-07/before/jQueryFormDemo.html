@@ -103,7 +103,14 @@
     </form>
 
     <script>
+        
+        //alert($("form").serialize());
 
+        var a = $("form").serializeArray();
+
+        $.each(a, function(index, field) {
+            console.log(field.name + ", " + field.value);
+        });
 
     </script>
 
