@@ -101,10 +101,14 @@
         $('form').validate({
             rules: {
                 fullname: {
-                    required: true
+                    required: true,
+                    minlength: 3,
+                    maxlength: 10
                 },
                 password: {
-                    required: true
+                    required: true,
+                    minlength: 6,
+                    maxlength: 20
                 }
             }
         });

@@ -97,7 +97,16 @@
     </form>
 
     <script>
-
+        $("form").validate({
+            rules: {
+                fullname: {
+                    required: true
+                },
+                password: {
+                    required: true
+                }
+            }
+        });
     </script>
 
 </body>
